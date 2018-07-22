@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />    
+    <title>Ninja</title>  
+</head>
+
+<body>
+    <div id='background'>
+        <div id='character' style='position:absolute; left:150px; top:150px;
+        background-image:url("img/down1.png"); width:59px; height:86px;'>
+        </div>
+    </div>
+    <script>
+        var leftValue = 150, topValue = 150, direction = 'down', step = 1;
+
+        function update() {
+            if (step == 1) step = 2; else step = 1;
+            var obj = document.getElementById("character");
+            // console.log(obj);
+            obj.style.left = leftValue + "px";
+            obj.style.top = topValue + "px";
+            obj.style.backgroundImage = "url('img/" + direction + step + ".png')";
+        }
+
+        document.onkeydown = function (e) {
+            // console.log(e);
+            if (e.keyCode == 37 && leftValue > 0) {
+                leftValue -= 10;
+                direction = 'left';
+            }
+            else if (e.keyCode == 39 && leftValue < 500) {
+                leftValue += 10;
+                direction = 'right';
+            }
+            else if (e.keyCode == 40 && topValue < 500) {
+                topValue += 10;
+                direction = 'down';
+            }
+            else if (e.keyCode == 38 && topValue > 0) {
+                topValue -= 10;
+                direction = 'top';
+            }
+            update();
+        }
+    </script>
+</body>
+
+
+</html>

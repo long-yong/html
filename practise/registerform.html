@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rigister Form</title>
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <form action="process.php" method="post">
+
+        <h3>&nbsp;&nbsp;My Registration Form</h3>
+
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name">
+
+        <br>
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name">
+
+        <br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+
+        <br>
+        <label for="pwconfirm">PW confirm:</label>
+        <input type="password" id="pwconfirm" name="pwconfirm">
+
+        <br>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+        <br>
+
+        <br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male&nbsp;</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female&nbsp;</label>
+
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other&nbsp;</label>
+
+        <p>A short discription about yourself:</p>
+        <textarea name="description" style="width:250px; height:100px"></textarea>
+        <br>
+
+        <p>Favorite language:
+            <select name="language">
+                <option>Html</option>
+                <option selected>Javascript</option>
+                <option>Python</option>
+                <option>C/C++</option>
+                <option>Java</option>
+                <option>C#</option>
+            </select>
+        </p>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+
+</html>

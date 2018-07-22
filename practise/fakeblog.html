@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fake Blog</title>
+
+    <style>
+        body {
+            width: 600px;
+        }
+
+        .tab1 {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Michael Jordan</h2>
+    <img src="img/jordan.jpg" alt="Jordan's playing picture">
+    <p>Michael Jeffrey Jordan (born February 17, 1963), also known by his initials, MJ,[3] is an American former professional
+        basketball player. He played 15 seasons in the National Basketball Association (NBA) for the Chicago Bulls and Washington
+        Wizards. His biography on the official NBA website states: "By acclamation, Michael Jordan is the greatest basketball
+        player of all time."[4] Jordan was one of the most effectively marketed athletes of his generation and was considered
+        instrumental in popularizing the NBA around the world in the 1980s and 1990s.[5] He is currently the principal owner
+        and chairman of the NBA's Charlotte Hornets.</p>
+
+    <table class="tab1" border="1px" rules="cols">
+        <tr>
+            <td>Year</td>
+            <td>PPG</td>
+            <td>MVP</td>
+        </tr>
+        <tr>
+            <td>1990-91</td>
+            <td>31.5</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>1991-92</td>
+            <td>30.1</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>1992-93</td>
+            <td>32.6</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>1995-96</td>
+            <td>30.4</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>1996-97</td>
+            <td>29.6</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>1997-98</td>
+            <td>28.7</td>
+            <td>Yes</td>
+        </tr>
+
+    </table>
+
+    <ul>
+        <li>1984 - 1993 Chicago Bulls</li>
+        <li>1995 - 1998 Chicago Bulls/li>
+        <li>2001 - 2003 Washington Wizards</li>
+    </ul>
+
+    <a href="https://www.youtube.com/watch?v=cuLprHh_BRg" target="_blank">Click For Awesome Highlight Video</a>
+
+
+    <form action="survey.php" method="post">
+
+        <p>Please take this short survey</p>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" style="width:190px;">
+
+        <br>
+        <br>
+        <input type="radio" id="emailyes" name="email" value="yes">
+        <label for="emailyes">Yes, please send me lots of emails&nbsp;&nbsp;</label>
+
+        <input type="radio" id="emailnot" name="email" value="no">
+        <label for="emailnot">No, please do not send me any emails</label>
+
+        <br>
+        <br>
+        <p>How did you hear about us?</p>
+        <label>
+            <input name="facebook" type="checkbox" value="1" />&nbsp;Facebook&nbsp;&nbsp;</label>
+        <br>
+        <label>
+            <input name="newspaper" type="checkbox" value="2" />&nbsp;Newspaper&nbsp;</label>
+        <br>
+        <label>
+            <input name="referral" type="checkbox" value="3" />&nbsp;Referral&nbsp;</label>
+
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+
+</html>
